@@ -73,6 +73,7 @@ public class EmployeeController {
         if (updates.getLocation() != null) Employee.setLocation(updates.getLocation());
         if (updates.getSupervisor()!= null) Employee.setSupervisor(updates.getSupervisor());
         if (updates.getSalary() != null) Employee.setSalary(updates.getSalary());
+        if (updates.getShift() != null) Employee.setShift(updates.getShift());
 
         return repository.save(Employee);
     }
